@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zecata Digital Store - Akun Premium Berkualitas</title>
+    <meta name="description"
+        content="Zecata Digital Store - Jual akun premium Netflix, Spotify, Canva, YouTube Premium, Disney+ dan masih banyak lagi dengan harga terjangkau!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: { "poppins": ["Poppins", "sans-serif"] },
+                    colors: {
+                        primary: "#7C3AED",
+                        secondary: "#3B82F6",
+                        accent: "#06B6D4",
+                        dark: "#0F172A",
+                        darkCard: "#1E293B"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-poppins bg-gray-50 dark:bg-dark text-gray-800 dark:text-gray-100 transition-colors duration-300">
+    <nav id="navbar"
+        class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-dark/90 backdrop-blur-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <a href="#" class="flex items-center space-x-2">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                        <i class="fas fa-bolt text-white text-lg"></i>
+                    </div>
+                    <span
+                        class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Zecata</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home"
+                        class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="#produk"
+                        class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors font-medium">Produk</a>
+                    <a href="#cara-order"
+                        class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors font-medium">Cara
+                        Order</a>
+                    <a href="#faq"
+                        class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors font-medium">FAQ</a>
+                    <a href="#kontak"
+                        class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors font-medium">Kontak</a>
+
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="darkModeToggle"
+                        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-darkCard transition-colors">
+                        <i class="fas fa-moon text-gray-600 dark:text-gray-300 text-lg"></i>
+                    </button>
+                    <a href="https://wa.me/085694163284" target="_blank"
+                        class="hidden sm:flex items-center space-x-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-5 py-2.5 rounded-full font-semibold transition-all duration-300 shadow-lg shadow-green-500/30 hover:shadow-green-500/50 hover:scale-105">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        <span>Order via WA</span>
+                    </a>
+                    <button id="mobileMenuBtn"
+                        class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-darkCard transition-colors">
+                        <i class="fas fa-bars text-gray-700 dark:text-gray-200 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden bg-white dark:bg-dark border-t dark:border-gray-700">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#home"
+                    class="block py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-darkCard text-gray-700 dark:text-gray-200 font-medium">Home</a>
+                <a href="#produk"
+                    class="block py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-darkCard text-gray-700 dark:text-gray-200 font-medium">Produk</a>
+                <a href="#cara-order"
+                    class="block py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-darkCard text-gray-700 dark:text-gray-200 font-medium">Cara
+                    Order</a>
+                <a href="#faq"
+                    class="block py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-darkCard text-gray-700 dark:text-gray-200 font-medium">FAQ</a>
+                <a href="#kontak"
+                    class="block py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-darkCard text-gray-700 dark:text-gray-200 font-medium">Kontak</a>
+                <a href="https://wa.me/085694163284" target="_blank"
+                    class="flex items-center justify-center space-x-2 bg-gradient-to-r from-green-500 to-green-600 text-white px-5 py-3 rounded-full font-semibold mt-4">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Order via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div
+            class="absolute inset-0 bg-gradient-to-br from-purple-50 via-blue-50 to-cyan-50 dark:from-dark dark:via-dark dark:to-dark">
+        </div>
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse"
+                style="animation-delay: 1s;"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left fade-in-up">
+                    <span
+                        class="inline-block px-4 py-2 bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/80 rounded-full text-sm font-semibold mb-6">
+                        <i class="fas fa-fire mr-2"></i>Trusted Digital Store
+                    </span>
+                    <h1
+                        class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6">
+                        Akun Premium<br>
+                        <span
+                            class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Berkualitas</span><br>
+                        Dengan Harga Terjangkau
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0">
+                        Dapatkan akun premium Netflix, Spotify, Canva, Disney+, dan masih banyak lagi. Proses cepat,
+                        garansi 30 hari, dan transaksi via WhatsApp!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#produk"
+                            class="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Lihat Produk</span>
+                        </a>
+                        <a href="https://wa.me/085694163284" target="_blank"
+                            class="inline-flex items-center justify-center space-x-2 bg-white dark:bg-darkCard border-2 border-gray-200 dark:border-gray-700 hover:border-primary text-gray-700 dark:text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105">
+                            <i class="fab fa-whatsapp text-green-500"></i>
+                            <span>Chat Admin</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+                        <div>
+                            <div class="text-3xl font-bold text-primary">500+</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">Pelanggan Puas</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-secondary">30+</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">Produk Premium</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-accent">24/7</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">Support Aktif</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="relative w-full aspect-square max-w-lg mx-auto">
+                        <!-- YouTube Premium - Top Right -->
+                        <div
+                            class="absolute top-0 right-4 md:right-8 bg-white dark:bg-darkCard rounded-2xl shadow-2xl p-4 animate-float">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center"><i
+                                        class="fab fa-youtube text-white text-xl"></i></div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 dark:text-white">YouTube Premium</div>
+                                    <div class="text-sm text-green-500">Tersedia</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Spotify Premium - Left Middle -->
+                        <div class="absolute top-1/3 left-0 md:left-2 bg-white dark:bg-darkCard rounded-2xl shadow-2xl p-4 animate-float"
+                            style="animation-delay: 0.5s;">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center"><i
+                                        class="fab fa-spotify text-white text-xl"></i></div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 dark:text-white">Spotify Premium</div>
+                                    <div class="text-sm text-green-500">Tersedia</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Google One - Right Middle -->
+                        <div class="absolute top-1/2 right-0 md:right-2 bg-white dark:bg-darkCard rounded-2xl shadow-2xl p-4 animate-float"
+                            style="animation-delay: 0.75s;">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center"><i
+                                        class="fab fa-google text-white text-xl"></i></div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 dark:text-white">Google One</div>
+                                    <div class="text-sm text-green-500">Tersedia</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Canva Pro - Bottom Left -->
+                        <div class="absolute bottom-1/4 left-4 md:left-8 bg-white dark:bg-darkCard rounded-2xl shadow-2xl p-4 animate-float"
+                            style="animation-delay: 1s;">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center"><i
+                                        class="fas fa-palette text-white text-xl"></i></div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 dark:text-white">Canva Pro</div>
+                                    <div class="text-sm text-green-500">Tersedia</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Disney+ Hotstar - Bottom Right -->
+                        <div class="absolute bottom-0 right-8 md:right-12 bg-white dark:bg-darkCard rounded-2xl shadow-2xl p-4 animate-float"
+                            style="animation-delay: 1.5s;">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center"><i
+                                        class="fas fa-play text-white text-lg"></i></div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 dark:text-white">Disney+ Hotstar</div>
+                                    <div class="text-sm text-green-500">Tersedia</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <a href="#produk" class="flex flex-col items-center text-gray-400 hover:text-primary transition-colors">
+                <span class="text-sm mb-2">Scroll</span><i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="produk" class="py-20 bg-white dark:bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in-up">
+                <span
+                    class="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-semibold mb-4"><i
+                        class="fas fa-fire mr-2"></i>Koleksi Kami</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">Produk Premium
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Pilihan lengkap akun premium untuk semua
+                    kebutuhan entertainment dan produktivitas Anda</p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="max-w-xl mx-auto mb-8 fade-in-up">
+                <div class="relative">
+                    <input type="text" id="searchInput" placeholder="Cari produk..."
+                        class="w-full px-5 py-4 pl-12 bg-gray-50 dark:bg-darkCard border border-gray-200 dark:border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-800 dark:text-white placeholder-gray-400">
+                    <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10 fade-in-up">
+                <button
+                    class="category-btn active px-5 py-2.5 bg-primary text-white rounded-full font-medium transition-all duration-300"
+                    data-category="all">Semua</button>
+                <button
+                    class="category-btn px-5 py-2.5 bg-gray-100 dark:bg-darkCard text-gray-700 dark:text-gray-200 rounded-full font-medium hover:bg-primary hover:text-white transition-all duration-300"
+                    data-category="streaming"><i class="fas fa-play mr-2"></i>Streaming</button>
+                <button
+                    class="category-btn px-5 py-2.5 bg-gray-100 dark:bg-darkCard text-gray-700 dark:text-gray-200 rounded-full font-medium hover:bg-primary hover:text-white transition-all duration-300"
+                    data-category="editing"><i class="fas fa-palette mr-2"></i>Editing</button>
+                <button
+                    class="category-btn px-5 py-2.5 bg-gray-100 dark:bg-darkCard text-gray-700 dark:text-gray-200 rounded-full font-medium hover:bg-primary hover:text-white transition-all duration-300"
+                    data-category="music"><i class="fas fa-music mr-2"></i>Musik</button>
+                <button
+                    class="category-btn px-5 py-2.5 bg-gray-100 dark:bg-darkCard text-gray-700 dark:text-gray-200 rounded-full font-medium hover:bg-primary hover:text-white transition-all duration-300"
+                    data-category="cloud"><i class="fas fa-cloud mr-2"></i>Cloud</button>
+                <button
+                    class="category-btn px-5 py-2.5 bg-gray-100 dark:bg-darkCard text-gray-700 dark:text-gray-200 rounded-full font-medium hover:bg-primary hover:text-white transition-all duration-300"
+                    data-category="gaming"><i class="fas fa-gamepad mr-2"></i>Gaming</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="hidden text-center py-12">
+                <i class="fas fa-search text-6xl text-gray-300 dark:text-gray-600 mb-4"></i>
+                <p class="text-gray-500 dark:text-gray-400 text-lg">Produk tidak ditemukan</p>
+            </div>
+        </div>
+    </section>
+    <section id="cara-order" class="py-20 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-dark dark:to-darkCard">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <span
+                    class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4"><i
+                        class="fas fa-shopping-cart mr-2"></i>Mudah & Cepat</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">Cara Order
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Hanya 4 langkah mudah untuk mendapatkan
+                    akun premium impian Anda</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="relative fade-in-up">
+                    <div
+                        class="bg-white dark:bg-darkCard rounded-3xl p-8 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                            1</div>
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-mouse-pointer text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Pilih Produk</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Pilih produk premium yang Anda inginkan dari daftar
+                            produk kami</p>
+                    </div>
+                    <div class="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+                        <i class="fas fa-chevron-right text-primary text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative fade-in-up" style="animation-delay: 0.15s;">
+                    <div
+                        class="bg-white dark:bg-darkCard rounded-3xl p-8 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                            2</div>
+                        <div
+                            class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fab fa-whatsapp text-3xl text-green-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Hubungi Admin</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Klik tombol Pesan, Anda akan langsung terhubung ke
+                            WhatsApp admin</p>
+                    </div>
+                    <div class="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+                        <i class="fas fa-chevron-right text-secondary text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative fade-in-up" style="animation-delay: 0.3s;">
+                    <div
+                        class="bg-white dark:bg-darkCard rounded-3xl p-8 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-accent to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                            3</div>
+                        <div class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-money-bill-wave text-3xl text-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Transfer Pembayaran</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Lakukan pembayaran sesuai total harga yang diberikan
+                            admin</p>
+                    </div>
+                    <div class="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+                        <i class="fas fa-chevron-right text-accent text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="fade-in-up" style="animation-delay: 0.45s;">
+                    <div
+                        class="bg-white dark:bg-darkCard rounded-3xl p-8 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-green-500/20">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                            4</div>
+                        <div
+                            class="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-check-circle text-3xl text-green-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Akun Terkirim</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Admin akan mengirim akun premium besertacara login
+                            via WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimoni" class="py-20 bg-white dark:bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <span class="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-4"><i
+                        class="fas fa-star mr-2"></i>Testimoni</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">Kata Mereka
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Apa kata pelanggan kami tentang pengalaman
+                    berbelanja di Zecata Digital Store</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 fade-in-up hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            R</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 dark:text-white">Rizky Pratama</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Netflix Premium</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 dark:text-gray-300">"Pelayanannya super cepat! Dalam 10 menit udah bisa
+                        nonton Netflix tanpa buffer. recommended banget seller-nya!"</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 fade-in-up hover:shadow-xl transition-all duration-300"
+                    style="animation-delay: 0.15s;">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-pink-500 to-rose-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            S</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 dark:text-white">Sarah Amelia</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Spotify Premium</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 dark:text-gray-300">"Akun Spotify-nya ori, lagu unlimited tanpa iklan. Harga
+                        lebih murah dari tempat lain. Pasti repeat order!"</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 fade-in-up hover:shadow-xl transition-all duration-300"
+                    style="animation-delay: 0.3s;">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            B</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 dark:text-white">Budi Santoso</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Canva Pro</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">"Canva Pro sangat membantu pekerjaan desain saya.
+                        Garansi 30 hari juga bikin tenang. Terima kasih Zecata!"</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 fade-in-up hover:shadow-xl transition-all duration-300"
+                    style="animation-delay: 0.45s;">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            D</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 dark:text-white">Dewi Kartika</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Disney+ Hotstar</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 dark:text-gray-300">"Bisa nonton semua film Marvel sekarang! Admin ramah dan
+                        helpful. Recommended!"</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 fade-in-up hover:shadow-xl transition-all duration-300"
+                    style="animation-delay: 0.6s;">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-purple-500 to-violet-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            A</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 dark:text-white">Andi Wijaya</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">YouTube Premium</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 dark:text-gray-300">"No ads sama sekali! Worth it banget. Download video
+                        juga bisa. Mantap!"</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 fade-in-up hover:shadow-xl transition-all duration-300"
+                    style="animation-delay: 0.75s;">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            P</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 dark:text-white">Putri Nurhaliza</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Capcut Pro</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 dark:text-gray-300">"Template premium semua unlocked! Video TikTok jadi
+                        lebih keren. Thanks Zecata!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="py-20 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-dark dark:to-darkCard">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <span
+                    class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4"><i
+                        class="fas fa-question-circle mr-2"></i>FAQ</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">Pertanyaan
+                    Umum</h2>
+                <p class="text-gray-600 dark:text-gray-300">Temukan jawaban untuk pertanyaan yang sering ditanyakan</p>
+            </div>
+            <div class="space-y-4 fade-in-up">
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between">
+                        <span class="font-semibold text-gray-900 dark:text-white"><i class="fas fa-shield-alt text-primary mr-3"></i>Apakah ada garansi?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 dark:text-gray-300 py-4">Ya! Kami memberikan <strong>garansi 30 hari</strong> untuk semua produk. Jika dalam 30 hari terjadi masalah dengan akun (misalnya tidak bisa login), kami akan <strong>replace dengan akun baru tanpa biaya tambahan</strong>.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between">
+                        <span class="font-semibold text-gray-900 dark:text-white"><i class="fas fa-clock text-secondary mr-3"></i>Berapa lama proses pengiriman akun?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 dark:text-gray-300 py-4">Proses pengiriman akun sangat cepat! Biasanya hanya membutuhkan waktu <strong>5-15 menit</strong> setelah pembayaran terkonfirmasi. Kami bekerja <strong>24 jam, 7 hari seminggu</strong>, jadi Anda bisa order kapan saja!</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between">
+                        <span class="font-semibold text-gray-900 dark:text-white"><i class="fas fa-credit-card text-accent mr-3"></i>Metode pembayaran apa saja yang tersedia?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 dark:text-gray-300 py-4">Kami menerima berbagai metode pembayaran:<br><br>
+                        <strong>Transfer Bank:</strong> BCA, Mandiri, BRI, BNI<br>
+                        <strong>E-Wallet:</strong> OVO, DANA, GOPAY, ShopeePay<br><br>
+                        Pilih metode yang paling nyaman untuk Anda!</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between">
+                        <span class="font-semibold text-gray-900 dark:text-white"><i class="fas fa-user-shield text-green-500 mr-3"></i>Apakah akun ini aman digunakan?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 dark:text-gray-300 py-4">Tentu saja! Akun yang kami berikan adalah <strong>akun premium sharing</strong> yang sudah terverifikasi. Akun sharing artinya beberapa user berbagi satu akun premium, ini adalah cara yang legal dan umum digunakan. Anda bisa langsung login dan menikmati semua fitur premium tanpa khawatir.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between">
+                        <span class="font-semibold text-gray-900 dark:text-white"><i class="fas fa-users text-pink-500 mr-3"></i>Apakah bisa berbagi dengan teman?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 dark:text-gray-300 py-4">Ya, akun premium yang kami sediakan mendukung <strong>profile berbagi (multi-profile)</strong>. Anda bisa invite teman untuk bersama-sama menikmati fitur premium dengan biaya yang lebih murah!</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between">
+                        <span class="font-semibold text-gray-900 dark:text-white"><i class="fas fa-ban text-red-500 mr-3"></i>Bagaimana jika akun ter-blokir?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 dark:text-gray-300 py-4">Jika akun ter-blokir karena faktor dari kami (misalnya banned dari sistem), kami akan <strong>segera replace dengan akun baru</strong>. Yang perlu diingat, kami tidak bertanggung jawab jika akun ter-blokir karena pelanggaran kebijakan dari pihak platform (misalnya menggunakan VPN, bot, atau aktivitas mencurigakan lainnya).</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between">
+                        <span class="font-semibold text-gray-900 dark:text-white"><i class="fas fa-sync-alt text-yellow-500 mr-3"></i>Bagaimana cara order?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 dark:text-gray-300 py-4">Cukup 4 langkah mudah:<br><br>
+                        1. <strong>Pilih produk</strong> yang diinginkan<br>
+                        2. <strong>Klik tombol "Pesan Sekarang"</strong> di card produk<br>
+                        3. <strong>Lakukan pembayaran</strong> sesuai total yang diberikan admin via WhatsApp<br>
+                        4. <strong>Akun dikirim</strong> via WhatsApp dalam 5-15 menit<br><br>
+                        Mudah dan cepat!</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between">
+                        <span class="font-semibold text-gray-900 dark:text-white"><i class="fas fa-headset text-blue-500 mr-3"></i>Bagaimana cara menghubungi admin?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 dark:text-gray-300 py-4">Anda bisa menghubungi kami melalui:<br><br>
+                        <strong>WhatsApp:</strong> 0856-9416-3284 (klik tombol Order via WA di navbar)<br>
+                        <strong>Discord:</strong> Discord Server kami<br>
+                        <strong>Email:</strong> admin@zecata.store<br><br>
+                        Kami siap membantu Anda 24 jam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="kontak" class="bg-dark dark:bg-black text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                            <i class="fas fa-bolt text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold">Zecata</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Toko digital terpercaya untuk semua kebutuhan akun premium Anda.
+                        Melayani dengan sepenuh hati sejak 2023.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/085694163284" target="_blank"
+                            class="w-10 h-10 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://discord.gg/88xcaskcfy" target="_blank"
+                            class="w-10 h-10 bg-indigo-600 hover:bg-indigo-700 rounded-full flex items-center justify-center transition-colors"><i
+                                class="fab fa-discord text-white"></i></a>
+                        <a href="mailto:admin@zecata.store"
+                            class="w-10 h-10 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Produk</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#produk" class="hover:text-primary transition-colors"><i
+                                    class="fas fa-play mr-2"></i>Netflix Premium</a></li>
+                        <li><a href="#produk" class="hover:text-primary transition-colors"><i
+                                    class="fab fa-spotify mr-2"></i>Spotify Premium</a></li>
+                        <li><a href="#produk" class="hover:text-primary transition-colors"><i
+                                    class="fas fa-play mr-2"></i>YouTube Premium</a></li>
+                        <li><a href="#produk" class="hover:text-primary transition-colors"><i
+                                    class="fas fa-palette mr-2"></i>Canva Pro</a></li>
+                        <li><a href="#produk" class="hover:text-primary transition-colors"><i
+                                    class="fas fa-play mr-2"></i>Disney+ Hotstar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Layanan</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#cara-order" class="hover:text-primary transition-colors"><i
+                                    class="fas fa-shopping-cart mr-2"></i>Cara Order</a></li>
+                        <li><a href="#faq" class="hover:text-primary transition-colors"><i
+                                    class="fas fa-question-circle mr-2"></i>FAQ</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors"><i
+                                    class="fas fa-shield-alt mr-2"></i>Garansi</a></li>
+
+                        <li><a href="#" class="hover:text-primary transition-colors"><i
+                                    class="fas fa-headset mr-2"></i>Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Kontak</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start"><i class="fab fa-whatsapp mr-3 mt-1 text-green-500"></i><span>+62
+                                856-9416-3284</span></li>
+                        <li class="flex items-start"><i
+                                class="fab fa-discord mr-3 mt-1 text-indigo-500"></i><span>Discord Server</span></li>
+                        <li class="flex items-start"><i
+                                class="fas fa-envelope mr-3 mt-1 text-blue-500"></i><span>admin@zecata.store</span></li>
+                        <li class="flex items-start"><i class="fas fa-clock mr-3 mt-1 text-yellow-500"></i><span>24 Jam
+                                / 7 Hari</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p class="mb-4">&copy; 2024 Zecata Digital Store. All rights reserved.</p>
+                <p class="text-sm">Disclaimer: Semua produk yang dijual adalah akun sharing. Kami tidak bertanggung
+                    jawab atas penyalahgunaan akun.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Lucide Icons - load after main.js -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</body>
+
+</html>
